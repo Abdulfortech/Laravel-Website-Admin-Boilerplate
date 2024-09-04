@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class TechStack extends Model
 {
     use HasFactory;
+
+    protected $table = 'tech_stack';
     protected $fillable = [
         'userID',
-        'roleID',
-        'title',
-        'category',
-        'link',
-        'progress',
-        'excerpt',
-        'body',
-        'picture',
+        'name',
+        'level',
         'status'
     ];
-
 }

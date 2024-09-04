@@ -28,10 +28,10 @@ class User extends Authenticatable
         'password',
     ];
 
-    public function business()
-    {
-        return $this->belongsTo(Business::class, 'businessID');
-    }
+    // public function business()
+    // {
+    //     return $this->belongsTo(Business::class, 'businessID');
+    // }
 
     /**
      * The attributes that should be hidden for serialization.
